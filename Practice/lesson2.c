@@ -69,6 +69,11 @@ double CalcAve(int people)
     return result.sum / (double)people;
 }
 
+/*-------------------------------------------------------------------
+    PrintResult
+    ====
+    結果の表示する
+---------------------------------------------------------------------*/
 void PrintResult()
 {
     printf("最大値=%6.1f\n", result.max);
