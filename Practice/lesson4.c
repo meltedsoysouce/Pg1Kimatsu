@@ -14,9 +14,9 @@ void DrawSteps(int layers)
             printf("*");
         }
 
-        if (i == 2)
-            printf("s");
-        printf("\n");
+        // if (i == 2)
+        //     printf("s");
+        printf("%c\n", (i==2) ? 's' : ' ');
     }
 
     printf("\n"); // 見た目を整えるために改行

@@ -10,10 +10,9 @@ int over50=0, over10=0;
 ---------------------------------------------------------------------*/
 void Analyze(int point)
 {
-    if (max < point)
-        max = point;
-    if (min > point)
-        min = point;
+    max = (max < point) ? max=point : max;
+    min = (min > point) ? min=point : min;
+    sum += point;
     
     if (point >= 50)
         over50++;
@@ -61,7 +60,7 @@ int main(void)
         Analyze(point);
     }
 
-    ClacAve(people);
+    ave = ClacAve(people);
     PrintResult();
 
     return 0;
